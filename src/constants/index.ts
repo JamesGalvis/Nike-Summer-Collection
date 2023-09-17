@@ -1,3 +1,4 @@
+import { shieldTick, support, truckFast } from '../assets/icons'
 import {
   BigShoe1,
   BigShoe2,
@@ -63,5 +64,23 @@ const products = [
     description: "Coleccion Verano",
   },
 ]
+
+export const services = [
+  {
+      imgUrl: truckFast,
+      label: "Envío gratuito",
+      subtext: "Disfrute de una compra sin problemas con nuestro servicio de envío gratuito."
+  },
+  {
+      imgUrl: shieldTick,
+      label: "Pago seguro",
+      subtext: "Realice transacciones sin preocupaciones con nuestras opciones de pago seguro."
+  },
+  {
+      imgUrl: support,
+      label: "Me encantaría ayudarte",
+      subtext: "Nuestro equipo está a su disposición para ayudarle en todo momento."
+  },
+];
 
 export { menu_list, statistics, shoes, products }

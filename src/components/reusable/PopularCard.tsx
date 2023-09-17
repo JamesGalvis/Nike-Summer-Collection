@@ -9,7 +9,7 @@ interface Props {
 
 function PopularCard({ imgUrl, name, price, description }: Props) {
   return (
-    <div className="flex-1 rounded-xl min-w-[240px] min-h-full group shadow-xl bg-hero bg-center bg-cover cursor-pointer">
+    <div className="flex-1 rounded-xl min-w-[240px] min-h-full group shadow-md bg-hero bg-center bg-cover cursor-pointer">
       <div className="px-6 py-4">
         <div className="flex justify-center items-center">
           <img
