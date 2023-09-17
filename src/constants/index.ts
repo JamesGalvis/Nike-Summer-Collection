@@ -1,4 +1,12 @@
-import { BigShoe1, BigShoe2, BigShoe3, thumbnailShoe1, thumbnailShoe2, thumbnailShoe3 } from "../assets/images"
+import {
+  BigShoe1,
+  BigShoe2,
+  BigShoe3,
+  shoe1Card,
+  thumbnailShoe1,
+  thumbnailShoe2,
+  thumbnailShoe3,
+} from '../assets/images'
 
 const menu_list = [
   { label: 'Home', href: '/home' },
@@ -29,4 +37,31 @@ const shoes = [
   },
 ]
 
-export { menu_list, statistics, shoes }
+const products = [
+  {
+    imgUrl: shoe1Card,
+    name: 'Nike Air Jordan-01',
+    price: '$200.20',
+    description: "Coleccion Verano"
+  },
+  {
+    imgUrl: shoe1Card,
+    name: 'Nike Air Jordan-10',
+    price: '$210.20',
+    description: "Coleccion Verano",
+  },
+  {
+    imgUrl: shoe1Card,
+    name: 'Nike Air Jordan-100',
+    price: '$220.20',
+    description: "Coleccion Verano"
+  },
+  {
+    imgUrl: shoe1Card,
+    name: 'Nike Air Jordan-001',
+    price: '$230.20',
+    description: "Coleccion Verano",
+  },
+]
+
+export { menu_list, statistics, shoes, products }

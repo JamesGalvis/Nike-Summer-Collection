@@ -14,6 +14,8 @@ import shoe8 from './shoe8.svg'
 import BigShoe1 from './BigShoe1.png'
 import BigShoe2 from './BigShoe2.png'
 import BigShoe3 from './BigShoe3.png'
+import shoe1Card from './shoe1Card.png'
+import shoe2Card from './shoe2Card.png'
 
 import thumbnailBackground from './thumbnail-background.svg'
 import thumbnailShoe1 from './thumbnail-shoe1.svg'
@@ -36,6 +38,8 @@ export {
     BigShoe1,
     BigShoe2,
     BigShoe3,
+    shoe1Card,
+    shoe2Card,
 
     thumbnailBackground,
     thumbnailShoe1,
