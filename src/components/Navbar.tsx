@@ -13,7 +13,7 @@ function Navbar() {
 
         <ul className="flex-1 flex justify-end items-center gap-10 max-lg:hidden">
           {menu_list.map((item) => (
-            <li key={item.label}>
+            <li className='py-2 nav-link relative' key={item.label}>
               <a 
                 href={`${item.href}`}
                 className='font-montserrat leading-normal text-base text-gray-800'
