@@ -1,8 +1,17 @@
-import { shieldTick, support, truckFast } from '../assets/icons'
+import {
+  facebook,
+  instagram,
+  shieldTick,
+  support,
+  truckFast,
+  twitter,
+} from '../assets/icons'
 import {
   BigShoe1,
   BigShoe2,
   BigShoe3,
+  customer1,
+  customer2,
   shoe1Card,
   thumbnailShoe1,
   thumbnailShoe2,
@@ -43,44 +52,101 @@ const products = [
     imgUrl: shoe1Card,
     name: 'Nike Air Jordan-01',
     price: '$200.20',
-    description: "Coleccion Verano"
+    description: 'Coleccion Verano',
   },
   {
     imgUrl: shoe1Card,
     name: 'Nike Air Jordan-10',
     price: '$210.20',
-    description: "Coleccion Verano",
+    description: 'Coleccion Verano',
   },
   {
     imgUrl: shoe1Card,
     name: 'Nike Air Jordan-100',
     price: '$220.20',
-    description: "Coleccion Verano"
+    description: 'Coleccion Verano',
   },
   {
     imgUrl: shoe1Card,
     name: 'Nike Air Jordan-001',
     price: '$230.20',
-    description: "Coleccion Verano",
+    description: 'Coleccion Verano',
   },
 ]
 
 export const services = [
   {
-      imgUrl: truckFast,
-      label: "Envío gratuito",
-      subtext: "Disfrute de una compra sin problemas con nuestro servicio de envío gratuito."
+    imgUrl: truckFast,
+    label: 'Envío gratuito',
+    subtext:
+      'Disfrute de una compra sin problemas con nuestro servicio de envío gratuito.',
   },
   {
-      imgUrl: shieldTick,
-      label: "Pago seguro",
-      subtext: "Realice transacciones sin preocupaciones con nuestras opciones de pago seguro."
+    imgUrl: shieldTick,
+    label: 'Pago seguro',
+    subtext:
+      'Realice transacciones sin preocupaciones con nuestras opciones de pago seguro.',
   },
   {
-      imgUrl: support,
-      label: "Me encantaría ayudarte",
-      subtext: "Nuestro equipo está a su disposición para ayudarle en todo momento."
+    imgUrl: support,
+    label: 'Me encantaría ayudarte',
+    subtext:
+      'Nuestro equipo está a su disposición para ayudarle en todo momento.',
   },
-];
+]
 
-export { menu_list, statistics, shoes, products }
+const reviews = [
+  {
+    imgURL: customer1,
+    customerName: 'Morich Brown',
+    rating: '4.5',
+    feedback:
+      'La atención al detalle y la calidad del producto superaron mis expectativas. Muy recomendable.',
+  },
+  {
+    imgURL: customer2,
+    customerName: 'Lota Mongeskar',
+    rating: '4.5',
+    feedback:
+      'El producto no sólo cumplió mis expectativas, sino que las superó. Sin duda, volveré a ser cliente.',
+  },
+]
+
+const footerLinks = [
+  {
+    title: 'Productos',
+    links: [
+      { name: 'Air Force 1', link: '/' },
+      { name: 'Air Max 1', link: '/' },
+      { name: 'Air Jordan 1', link: '/' },
+      { name: 'Air Force 2', link: '/' },
+      { name: 'Nike Waffle Racer', link: '/' },
+      { name: 'Nike Cortez', link: '/' },
+    ],
+  },
+  {
+    title: 'Ayuda',
+    links: [
+      { name: 'Nosotros', link: '/' },
+      { name: 'FAQs', link: '/' },
+      { name: 'Como funciona', link: '/' },
+      { name: 'Politicas de privacidad', link: '/' },
+      { name: 'Política de pagos', link: '/' },
+    ],
+  },
+  {
+    title: 'Póngase en contacto',
+    links: [
+      { name: 'customer@nike.com', link: 'mailto:customer@nike.com' },
+      { name: '+92554862354', link: 'tel:+92554862354' },
+    ],
+  },
+]
+
+const socialMedia = [
+  { src: facebook, alt: 'facebook logo' },
+  { src: twitter, alt: 'twitter logo' },
+  { src: instagram, alt: 'instagram logo' },
+]
+
+export { menu_list, statistics, shoes, products, reviews, footerLinks, socialMedia }

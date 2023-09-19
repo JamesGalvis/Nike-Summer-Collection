@@ -2,12 +2,32 @@ interface ButtonProps {
   label: string
   iconUrl?: string
   interaction?: boolean
+  bgColor?: string
+  textColor?: string
+  borderColor?: string
+  rounded?: boolean
+  fullWidth?: boolean
 }
 
-function Button({ label, iconUrl, interaction }: ButtonProps) {
+function Button({
+  label,
+  iconUrl,
+  interaction,
+  bgColor,
+  borderColor,
+  textColor,
+  fullWidth,
+  rounded,
+}: ButtonProps) {
   return (
     <button
-      className={`group flex justify-center items-center text-base leading-none text-white bg-coral-red gap-2 px-7 py-4 font-montserrat rounded-lg`}
+      className={`group flex justify-center items-center text-base leading-none ${
+        bgColor
+          ? `${textColor} ${bgColor} ${borderColor} hover:text-white`
+          : 'text-white bg-coral-red'
+      } hover:bg-black transition gap-2 px-7 py-4 font-montserrat ${
+        fullWidth && 'w-full'
+      } rouneded-full ${rounded ? 'rounded-full' : 'rounded-lg'}`}
     >
       {label}
       {iconUrl && (
